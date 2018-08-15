@@ -1,0 +1,59 @@
+2017-12-17 23:33:22,978 - INFO----  执行第2行--sglogin用例
+2017-12-17 23:33:22,993 - DEBUG----  Starting new HTTPS connection (1): dsylogin.10333.com
+2017-12-17 23:33:23,399 - DEBUG----  https://dsylogin.10333.com:443 "GET /dotoyo/register/goDsySubsystem.do?username=13744444081&sysType=1 HTTP/1.1" 302 0
+2017-12-17 23:33:23,399 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:23,540 - DEBUG----  http://dsyjg.10333.com:80 "GET /ent/index?ticket=ST-53348-biZY9yd5Djecz3caF7PW-UV560vaIL427hgYIf4Wz2r33ckU68gjl&sysType=1 HTTP/1.1" 302 0
+2017-12-17 23:33:23,603 - DEBUG----  http://dsyjg.10333.com:80 "GET /sys/index HTTP/1.1" 200 None
+2017-12-17 23:33:23,603 - INFO----  登录成功
+2017-12-17 23:33:23,603 - INFO----  执行第3行--checkDiaryByDate用例
+2017-12-17 23:33:23,603 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:23,759 - DEBUG----  http://dsyjg.10333.com:80 "POST /diary/checkDiaryByDate HTTP/1.1" 200 54
+2017-12-17 23:33:23,774 - INFO----  -----------------{'m': '操作成功', 'r': 1, 'h': False, 'd': {'diary': {}}}
+2017-12-17 23:33:23,774 - INFO----  解析返回的json中
+2017-12-17 23:33:23,774 - INFO----  解析返回的json完成
+2017-12-17 23:33:23,774 - INFO----  对比结果中
+2017-12-17 23:33:23,774 - INFO----  对比完成，结果为“true”
+2017-12-17 23:33:23,774 - INFO----  执行第4行--getDiaryModuleDefault 用例
+2017-12-17 23:33:23,774 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:23,868 - DEBUG----  http://dsyjg.10333.com:80 "POST /diary/getDiaryModuleDefault HTTP/1.1" 200 520
+2017-12-17 23:33:23,868 - INFO----  -----------------{'m': '操作成功', 'r': 1, 'h': False, 'd': {'modules': [{'key': 'SGENVIRONMENT', 'value': '施工环境影响'}, {'key': 'PRODUCTION', 'value': '生产情况'}, {'key': 'QUALITYCHECK', 'value': '质量检查'}, {'key': 'SECURITYCHECK', 'value': '安全检查'}, {'key': 'MATERIALENTER', 'value': '材料进场'}, {'key': 'WITNESSCHECK', 'value': '见证送检'}, {'key': 'EQUIPMENTENTER', 'value': '设备进场'}, {'key': 'QUALITYACCEPT', 'value': '质量验收'}, {'key': 'SECURITYACCEPT', 'value': '安全验收'}, {'key': 'OTHER', 'value': '其他情况'}]}}
+2017-12-17 23:33:23,868 - INFO----  解析返回的json中
+2017-12-17 23:33:23,868 - INFO----  解析返回的json完成
+2017-12-17 23:33:23,868 - INFO----  对比结果中
+2017-12-17 23:33:23,868 - INFO----  对比完成，结果为“true”
+2017-12-17 23:33:23,868 - INFO----  执行第5行--addDiary 用例
+2017-12-17 23:33:23,868 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:24,212 - DEBUG----  http://dsyjg.10333.com:80 "POST /diary/addDiary HTTP/1.1" 200 735
+2017-12-17 23:33:24,228 - INFO----  --------------------提取动态ID完成---------------------
+2017-12-17 23:33:24,228 - INFO----  {'reviewUserId': '371c6107d3ca4d7090f5273eecfdb746', 'weatherId': '4028814a5fd8f68d0160600ddeb51847'}
+2017-12-17 23:33:24,228 - INFO----  -----------------{'m': '操作成功', 'r': 1, 'h': False, 'd': {'diary': {'week': '星期日', 'weather': {'weatherCond': '多云', 'windSc': '微风', 'id': '4028814a5fd8f68d0160600ddeb51847', 'tempMax': 13, 'windGrade': '4', 'tempMin': 9, 'windDir': '无持续风向'}, 'name': '2017年12月17日(星期日)施工日记'}, 'reviewUsers': [], 'modules': 'PRODUCTION,SECURITYCHECK,QUALITYCHECK,SGENVIRONMENT,MATERIALENTER,WITNESSCHECK,EQUIPMENTENTER,QUALITYACCEPT,SECURITYACCEPT,OTHER', 'dailyFlag': False, 'lastreviewuser': {'other': 1, 'reviewUserId': '371c6107d3ca4d7090f5273eecfdb746', 'roleId': None}, 'modulesContent': {'QUALITYCHECK': [], 'SECURITYACCEPT': [], 'QUALITYACCEPT': {'itemAccept': [], 'lotAccept': []}, 'MATERIALENTER': [], 'SECURITYCHECK': [], 'EQUIPMENTENTER': [], 'WITNESSCHECK': []}}}
+2017-12-17 23:33:24,228 - INFO----  解析返回的json中
+2017-12-17 23:33:24,228 - INFO----  解析返回的json完成
+2017-12-17 23:33:24,228 - INFO----  对比结果中
+2017-12-17 23:33:24,228 - INFO----  对比完成，结果为“true”
+2017-12-17 23:33:24,228 - INFO----  执行第6行--uploadfile用例
+2017-12-17 23:33:24,228 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:31,041 - DEBUG----  http://dsyjg.10333.com:80 "POST /uploadFiles/uploadBigFile HTTP/1.1" 200 570
+2017-12-17 23:33:31,057 - INFO----  -----------------[{'queryUrl': 'f=NDAyODgxNGE1ZmE1MmY0NDAxNjA2NTFiZmE3NDI2YzU&uid=qqiR2rrBVDKEx26B63hHeQ&sid=eFuSEX2LYWe6Jgjzvrikmg&check=oI-Zt8dQnfxZLPtIrDQ5Xw', 'size': 0, 'zipParam': None, 'updateUser': None, 'url': 'http://dsyfile.10333.com/2017/12/3ebe8213-6eb3-452a-9d72-d65f721b360b.jpg', 'createUserId': '371c6107d3ca4d7090f5273eecfdb746', 'filename': 'xpath', 'isRel': 0, 'createDateFmt': '2017-12-17', 'zipUrl': None, 'createUser': '施工总包二号', 'belongSys': None, 'isLook': 1, 'createDate': 1513524820594, 'id': '4028814a5fa52f440160651bfa7426c5', 'type': '.jpg', 'name': 'xpath.jpg', 'zipState': '0'}]
+2017-12-17 23:33:31,057 - INFO----  解析返回的json中
+2017-12-17 23:33:31,057 - INFO----  解析返回的json完成
+2017-12-17 23:33:31,057 - INFO----  对比结果中
+2017-12-17 23:33:31,057 - INFO----  对比完成，结果为“true”
+2017-12-17 23:33:31,057 - INFO----  执行第7行--checkCommon 用例
+2017-12-17 23:33:31,057 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:31,150 - DEBUG----  http://dsyjg.10333.com:80 "POST /diary/checkCommon HTTP/1.1" 200 55
+2017-12-17 23:33:31,166 - INFO----  -----------------{'m': '操作成功', 'r': 1, 'h': False, 'd': {'same': True}}
+2017-12-17 23:33:31,166 - INFO----  解析返回的json中
+2017-12-17 23:33:31,166 - INFO----  解析返回的json完成
+2017-12-17 23:33:31,166 - INFO----  对比结果中
+2017-12-17 23:33:31,166 - INFO----  对比完成，结果为“true”
+2017-12-17 23:33:31,166 - INFO----  执行第8行--saveDiary 用例
+2017-12-17 23:33:31,166 - DEBUG----  Starting new HTTP connection (1): dsyjg.10333.com
+2017-12-17 23:33:31,416 - DEBUG----  http://dsyjg.10333.com:80 "POST /diary/saveDiary HTTP/1.1" 200 44
+2017-12-17 23:33:31,416 - INFO----  -----------------{'m': '操作成功', 'r': 1, 'h': False, 'd': {}}
+2017-12-17 23:33:31,416 - INFO----  解析返回的json中
+2017-12-17 23:33:31,416 - INFO----  解析返回的json完成
+2017-12-17 23:33:31,416 - INFO----  对比结果中
+2017-12-17 23:33:31,416 - INFO----  对比完成，结果为“true”
+2017-12-17 23:33:37,276 - INFO----  保存excel
+2017-12-17 23:33:37,276 - INFO----  关闭excel
